@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: servico-aplicacao
+spec:
+  ports:
+    - port: 80
+  type: LoadBalancer
+  selector:
+    app: aplicacao-pod
